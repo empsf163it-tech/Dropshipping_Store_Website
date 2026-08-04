@@ -15,7 +15,7 @@ import { CompareProductsModal } from './components/CompareProductsModal';
 import { RecentPurchasePopup } from './components/RecentPurchasePopup';
 import { SupplierAutomationConsole } from './components/SupplierAutomationConsole';
 import { LiveOrderTracker } from './components/LiveOrderTracker';
-import { GitHubDeployModal } from './components/GitHubDeployModal';
+
 
 // Pages
 import { ShopCatalogPage } from './pages/ShopCatalogPage';
@@ -41,7 +41,7 @@ export function App() {
   const [isAIConciergeOpen, setIsAIConciergeOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCompareOpen, setIsCompareOpen] = useState(false);
-  const [isGitModalOpen, setIsGitModalOpen] = useState(false);
+
 
   // Navigation Helper
   const handleNavigate = (page: PageView) => {
@@ -110,7 +110,7 @@ export function App() {
         onOpenCart={() => setIsCartOpen(true)}
         onOpenAIConcierge={() => setIsAIConciergeOpen(true)}
         onOpenCompare={() => setIsCompareOpen(true)}
-        onOpenGitModal={() => setIsGitModalOpen(true)}
+
         products={PRODUCTS}
         onSelectProduct={handleSelectProduct}
       />
@@ -215,7 +215,7 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <Footer onNavigate={handleNavigate} onOpenGitModal={() => setIsGitModalOpen(true)} />
+      <Footer onNavigate={handleNavigate} />
 
       {/* Floating Interactive Popups & Drawers */}
       <RecentPurchasePopup products={PRODUCTS} />
@@ -243,10 +243,7 @@ export function App() {
         onRemoveFromCompare={id => setCompareIds(prev => prev.filter(x => x !== id))}
       />
 
-      <GitHubDeployModal
-        isOpen={isGitModalOpen}
-        onClose={() => setIsGitModalOpen(false)}
-      />
+
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ProductCard } from './ProductCard';
 import { Product } from '../types';
-import { Flame, Sparkles, Award, Zap } from 'lucide-react';
+import { TrendingUp, Sparkles, Trophy, Zap } from 'lucide-react';
 
 interface TrendingProductsProps {
   products: Product[];
@@ -38,7 +38,7 @@ export const TrendingProducts: React.FC<TrendingProductsProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
-              <Flame className="w-3.5 h-3.5" />
+              <TrendingUp className="w-3.5 h-3.5" />
               Conversion-Driven High Demand Items
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight">Trending DTC Hardware</h2>
@@ -51,9 +51,9 @@ export const TrendingProducts: React.FC<TrendingProductsProps> = ({
           <div className="flex flex-wrap gap-2 p-1.5 rounded-2xl bg-zinc-900 border border-zinc-800 text-xs font-semibold">
             {[
               { id: 'all', label: 'All Catalog', icon: Sparkles },
-              { id: 'bestsellers', label: 'Best Sellers', icon: Award },
+              { id: 'bestsellers', label: 'Best Sellers', icon: Trophy },
               { id: 'flash', label: 'Flash Sale', icon: Zap },
-              { id: 'new', label: 'New Releases', icon: Flame }
+              { id: 'new', label: 'New Releases', icon: TrendingUp }
             ].map(tab => {
               const Icon = tab.icon;
               return (

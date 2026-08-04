@@ -7,9 +7,8 @@ import {
   Layers, 
   User, 
   Zap, 
-  Clock, 
-  ChevronDown,
-  Github
+  Timer, 
+  ChevronDown
 } from 'lucide-react';
 import { PageView, Product } from '../types';
 
@@ -22,7 +21,7 @@ interface NavbarProps {
   onOpenCart: () => void;
   onOpenAIConcierge: () => void;
   onOpenCompare: () => void;
-  onOpenGitModal: () => void;
+
   products: Product[];
   onSelectProduct: (product: Product) => void;
 }
@@ -36,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenCart,
   onOpenAIConcierge,
   onOpenCompare,
-  onOpenGitModal,
+
   products,
   onSelectProduct
 }) => {
@@ -90,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <div className="flex items-center gap-4 text-[11px]">
             <div className="flex items-center gap-1 font-mono text-amber-400 font-bold">
-              <Clock className="w-3 h-3" />
+              <Timer className="w-3 h-3" />
               <span>
                 {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
               </span>
@@ -102,13 +101,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Zap className="w-3 h-3" /> Supplier API Live
             </button>
-            <span className="hidden sm:inline text-zinc-600">|</span>
-            <button 
-              onClick={onOpenGitModal}
-              className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 border border-amber-500/30 font-bold transition text-[10px]"
-            >
-              <Github className="w-3 h-3" /> Host on GitHub Pages
-            </button>
+
           </div>
         </div>
       </div>

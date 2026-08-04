@@ -4,12 +4,12 @@ import {
   ShoppingBag, 
   Heart, 
   Layers, 
-  Check, 
+  CircleCheck, 
   ShieldCheck, 
   Truck, 
   Sparkles, 
-  Clock, 
-  Award,
+  Timer, 
+  Trophy,
   ChevronDown,
   ChevronUp,
   Plus
@@ -138,7 +138,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
               </div>
 
               <div className="flex items-center gap-2 text-xs text-amber-400 font-semibold pt-1">
-                <Clock className="w-4 h-4 animate-spin" />
+                <Timer className="w-4 h-4 animate-spin" />
                 <span>🔥 Scarcity Alert: Only {product.stockLevel} units remaining in {product.supplier.location}</span>
               </div>
             </div>
@@ -175,7 +175,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
               <ul className="space-y-1.5 text-xs text-zinc-300">
                 {product.features?.map((f, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <CircleCheck className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     <span>{f}</span>
                   </li>
                 ))}
@@ -197,7 +197,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                 >
                   {added ? (
                     <>
-                      <Check className="w-5 h-5" /> Added to Bag
+                      <CircleCheck className="w-5 h-5" /> Added to Bag
                     </>
                   ) : (
                     <>

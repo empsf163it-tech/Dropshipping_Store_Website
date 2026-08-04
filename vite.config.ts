@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/Dropshipping_Store_Website/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

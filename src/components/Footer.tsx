@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Truck, Award, Zap, ArrowRight, CheckCircle2, Github } from 'lucide-react';
+import { ShieldCheck, Truck, Trophy, Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { PageView } from '../types';
 
 interface FooterProps {
   onNavigate: (page: PageView) => void;
-  onOpenGitModal?: () => void;
+
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenGitModal }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenGitModal }) =>
 
           <div className="flex items-center gap-3">
             <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/30 text-blue-400">
-              <Award className="w-5 h-5" />
+              <Trophy className="w-5 h-5" />
             </div>
             <div>
               <h4 className="font-bold text-white text-sm">2-Year Global Warranty</h4>
@@ -138,17 +138,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenGitModal }) =>
 
         {/* Brand & Automation */}
         <div className="space-y-3">
-          <h4 className="font-bold text-white uppercase tracking-wider text-xs">Story & Deployment</h4>
+          <h4 className="font-bold text-white uppercase tracking-wider text-xs">Story & Community</h4>
           <ul className="space-y-2 text-zinc-400">
             <li><button onClick={() => onNavigate('about')} className="hover:text-amber-400 transition">Our Story & Mission</button></li>
             <li><button onClick={() => onNavigate('community')} className="hover:text-amber-400 transition">Customer Gallery & Reviews</button></li>
             <li><button onClick={() => onNavigate('blog')} className="hover:text-amber-400 transition">Circadian & Focus Blog</button></li>
             <li><button onClick={() => onNavigate('automation-hub')} className="text-emerald-400 font-bold hover:underline flex items-center gap-1"><Zap className="w-3 h-3" /> Supplier Console</button></li>
-            <li>
-              <button onClick={onOpenGitModal} className="text-amber-400 font-bold hover:underline flex items-center gap-1.5">
-                <Github className="w-3.5 h-3.5" /> Deploy to GitHub Pages
-              </button>
-            </li>
+
           </ul>
         </div>
       </div>

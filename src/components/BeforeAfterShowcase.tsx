@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Check, X, ShieldAlert, Award } from 'lucide-react';
+import { Sparkles, CircleCheck, CircleX, ShieldAlert, Trophy } from 'lucide-react';
 
 interface BeforeAfterShowcaseProps {
   beforeLabel?: string;
@@ -46,7 +46,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
             referrerPolicy="no-referrer"
           />
           <div className="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-lg bg-red-950/80 border border-red-500/40 text-red-300 text-xs font-bold flex items-center gap-1.5">
-            <X className="w-3.5 h-3.5" />
+            <CircleX className="w-3.5 h-3.5" />
             {beforeLabel}
           </div>
         </div>
@@ -64,7 +64,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
             referrerPolicy="no-referrer"
           />
           <div className="absolute top-4 right-4 z-10 px-3 py-1.5 rounded-lg bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-bold flex items-center gap-1.5">
-            <Award className="w-3.5 h-3.5" />
+            <Trophy className="w-3.5 h-3.5" />
             {afterLabel}
           </div>
         </div>
@@ -102,7 +102,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
 
         <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-900/30 text-xs space-y-2">
           <div className="flex items-center gap-2 font-bold text-emerald-400">
-            <Check className="w-4 h-4" />
+            <CircleCheck className="w-4 h-4" />
             VANGUARD Engineered Standard
           </div>
           <p className="text-zinc-300 leading-relaxed">{afterDesc}</p>

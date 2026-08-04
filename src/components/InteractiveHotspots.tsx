@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ProductHotspot } from '../types';
-import { Info, Sparkles } from 'lucide-react';
+import { CircleHelp, Sparkles } from 'lucide-react';
 
 interface InteractiveHotspotsProps {
   image: string;
@@ -65,7 +65,7 @@ export const InteractiveHotspots: React.FC<InteractiveHotspotsProps> = ({
           <div className="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-xl bg-zinc-900/90 border border-zinc-700/80 text-white backdrop-blur-xl shadow-2xl animate-in fade-in slide-in-from-bottom-2 duration-200">
             <div className="flex items-start gap-3">
               <div className="p-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 flex-shrink-0">
-                <Info className="w-4 h-4" />
+                <CircleHelp className="w-4 h-4" />
               </div>
               <div className="space-y-1">
                 <h5 className="text-sm font-bold text-amber-300">{activeHotspot.title}</h5>

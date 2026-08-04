@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, ShieldCheck, Zap, Award, Globe } from 'lucide-react';
+import { ArrowRight, Sparkles, ShieldCheck, Zap, Trophy, Globe } from 'lucide-react';
 import { PageView } from '../types';
 
 interface HeroBannerProps {
@@ -67,7 +67,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
               <span>30-Day Money-Back</span>
             </div>
             <div className="flex items-center gap-2">
-              <Award className="w-4 h-4 text-amber-400" />
+              <Trophy className="w-4 h-4 text-amber-400" />
               <span>2-Year Global Warranty</span>
             </div>
             <div className="flex items-center gap-2">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, Eye, Layers, Heart, ShoppingBag, Check } from 'lucide-react';
+import { Star, ScanEye, Layers, Heart, ShoppingBag, CircleCheck } from 'lucide-react';
 import { Product } from '../types';
 
 interface ProductCardProps {
@@ -88,7 +88,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Live Visitor Indicator */}
         <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-zinc-950/80 border border-zinc-800 backdrop-blur-md text-[10px] text-zinc-300 flex items-center gap-1.5">
-          <Eye className="w-3 h-3 text-amber-400" />
+          <ScanEye className="w-3 h-3 text-amber-400" />
           <span>{12 + Math.floor(product.id.length * 2.5)} viewing</span>
         </div>
       </div>
@@ -146,7 +146,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           >
             {addedAnimation ? (
               <>
-                <Check className="w-3.5 h-3.5" /> Added!
+                <CircleCheck className="w-3.5 h-3.5" /> Added!
               </>
             ) : (
               <>

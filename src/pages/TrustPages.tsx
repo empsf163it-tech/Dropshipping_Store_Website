@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Truck, Clock, Award, ChevronDown, ChevronUp, Lock } from 'lucide-react';
+import { ShieldCheck, Truck, Timer, Trophy, ChevronDown, ChevronUp, Lock } from 'lucide-react';
 import { FAQS } from '../data/storeData';
 
 export const TrustPages: React.FC = () => {
@@ -33,7 +33,7 @@ export const TrustPages: React.FC = () => {
 
           <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 space-y-2">
             <div className="flex items-center gap-2 text-emerald-400 font-bold text-base">
-              <Award className="w-5 h-5" /> 2-Year Global Manufacturer Warranty
+              <Trophy className="w-5 h-5" /> 2-Year Global Manufacturer Warranty
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed">
               All DropFlow hardware is covered by a 2-year full replacement warranty against component defects, acoustic degradation, or battery performance issues.
@@ -42,7 +42,7 @@ export const TrustPages: React.FC = () => {
 
           <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 space-y-2">
             <div className="flex items-center gap-2 text-blue-400 font-bold text-base">
-              <Clock className="w-5 h-5" /> 30-Day Risk-Free Money-Back Trial
+              <Timer className="w-5 h-5" /> 30-Day Risk-Free Money-Back Trial
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed">
               Try our studio acoustics and circadian lamps in your own environment for 30 days. If you are not completely satisfied, return for a 100% refund with prepaid return shipping labels.

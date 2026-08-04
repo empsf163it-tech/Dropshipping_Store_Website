@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Globe, ShieldCheck, Zap, Layers, Sparkles } from 'lucide-react';
+import { Trophy, Globe, ShieldCheck, Zap, Layers, Sparkles } from 'lucide-react';
 import { PRESS_QUOTES } from '../data/storeData';
 
 export const AboutBrandPage: React.FC = () => {

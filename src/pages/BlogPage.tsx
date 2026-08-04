@@ -1,6 +1,6 @@
 import React from 'react';
 import { BLOG_POSTS } from '../data/storeData';
-import { BookOpen, Clock, ArrowRight } from 'lucide-react';
+import { NotebookText, Timer, ArrowRight } from 'lucide-react';
 
 export const BlogPage: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ export const BlogPage: React.FC = () => {
         {/* Header */}
         <div className="text-center space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
-            <BookOpen className="w-3.5 h-3.5" />
+            <NotebookText className="w-3.5 h-3.5" />
             Engineering, Focus & Acoustics Journal
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight">DropFlow Technical Journal</h1>
@@ -29,7 +29,7 @@ export const BlogPage: React.FC = () => {
                 <div className="flex items-center gap-3 text-xs text-amber-400 font-bold">
                   <span>{post.category}</span>
                   <span>•</span>
-                  <span className="text-zinc-500 flex items-center gap-1 font-normal"><Clock className="w-3 h-3" /> {post.readTime}</span>
+                  <span className="text-zinc-500 flex items-center gap-1 font-normal"><Timer className="w-3 h-3" /> {post.readTime}</span>
                 </div>
                 <h3 className="text-xl font-bold text-white hover:text-amber-300 transition cursor-pointer">{post.title}</h3>
                 <p className="text-xs text-zinc-400 leading-relaxed">{post.excerpt}</p>
