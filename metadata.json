@@ -1,0 +1,6 @@
+{
+  "name": "DropFlow — Studio & Living DTC Store",
+  "description": "A modern DTC ecommerce store with studio products, AI product finder, and seamless shopping experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
