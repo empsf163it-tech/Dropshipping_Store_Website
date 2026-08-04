@@ -70,13 +70,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Brand Info & Newsletter (Col 1 & 2) */}
         <div className="lg:col-span-2 space-y-4">
-          <div>
-            <span className="text-2xl font-black tracking-widest bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
-              DropFlow
-            </span>
-            <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block">
-              STUDIO & LIVING DTC ARCHITECTURE
-            </span>
+          <div className="flex items-center gap-2.5">
+            <svg className="w-8 h-8 shrink-0" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="48" fill="#09090b" stroke="#f59e0b" stroke-width="4"/>
+              <path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <span className="text-2xl font-black tracking-widest bg-gradient-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent block">
+                DropFlow
+              </span>
+              <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block -mt-1">
+                STUDIO & LIVING
+              </span>
+            </div>
           </div>
 
           <p className="text-zinc-400 text-xs max-w-sm leading-relaxed">

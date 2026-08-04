@@ -26,7 +26,7 @@ export const CompareProductsModal: React.FC<CompareProductsModalProps> = ({
         <div className="flex items-center justify-between p-6 border-b border-zinc-800">
           <div>
             <h3 className="text-lg font-bold">Side-by-Side Hardware Comparison</h3>
-            <p className="text-xs text-zinc-400">Comparing {products.length} VANGUARD DTC Flagship Items</p>
+            <p className="text-xs text-zinc-400">Comparing {products.length} DropFlow DTC Flagship Items</p>
           </div>
           <button
             onClick={onClose}

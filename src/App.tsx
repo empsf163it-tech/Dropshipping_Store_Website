@@ -223,6 +223,7 @@ export function App() {
       <AIFinderModal
         isOpen={isAIConciergeOpen}
         onClose={() => setIsAIConciergeOpen(false)}
+        products={PRODUCTS}
         onSelectProduct={handleSelectProduct}
       />
 

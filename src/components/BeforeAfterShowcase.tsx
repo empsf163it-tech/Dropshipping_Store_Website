@@ -14,7 +14,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
   beforeLabel = 'Mass Market Generic Product',
   beforeImage = 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80',
   beforeDesc = 'Hollow plastic housing, generic driver, no noise cancellation, 15h battery, uncertified battery cell.',
-  afterLabel = 'VANGUARD Engineered Standard',
+  afterLabel = 'DropFlow Engineered Standard',
   afterImage = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80',
   afterDesc = 'Aerospace 6061-T6 Aluminium, Beryllium drivers, 42dB hybrid ANC, 48h battery with fast charging, 2-Year warranty.'
 }) => {
@@ -28,7 +28,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
             <Sparkles className="w-3.5 h-3.5" />
             True DTC Quality Comparison
           </div>
-          <h3 className="text-xl font-bold">Why VANGUARD Replaces Generic Dropshipping</h3>
+          <h3 className="text-xl font-bold">Why DropFlow Replaces Generic Dropshipping</h3>
         </div>
         <p className="text-xs text-zinc-400 max-w-sm">
           Slide left or right to see how our engineered hardware differs from unverified mass market templates.
@@ -103,7 +103,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = ({
         <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-900/30 text-xs space-y-2">
           <div className="flex items-center gap-2 font-bold text-emerald-400">
             <CircleCheck className="w-4 h-4" />
-            VANGUARD Engineered Standard
+            DropFlow Engineered Standard
           </div>
           <p className="text-zinc-300 leading-relaxed">{afterDesc}</p>
         </div>

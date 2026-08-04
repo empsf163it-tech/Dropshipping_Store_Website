@@ -32,10 +32,10 @@ export const FloatingCartDrawer: React.FC<FloatingCartDrawerProps> = ({
 
   const handleApplyPromo = (e: React.FormEvent) => {
     e.preventDefault();
-    if (promoCode.toUpperCase() === 'VANGUARD10' || promoCode.toUpperCase() === 'WELCOME') {
+    if (promoCode.toUpperCase() === 'DROPFLOW10' || promoCode.toUpperCase() === 'WELCOME') {
       setAppliedDiscount(Math.round(subtotal * 0.1));
     } else {
-      alert('Invalid promo code. Try "VANGUARD10" for 10% off!');
+      alert('Invalid promo code. Try "DROPFLOW10" for 10% off!');
     }
   };
 
@@ -153,7 +153,7 @@ export const FloatingCartDrawer: React.FC<FloatingCartDrawerProps> = ({
                   type="text"
                   value={promoCode}
                   onChange={e => setPromoCode(e.target.value)}
-                  placeholder="Promo code (e.g. VANGUARD10)"
+                  placeholder="Promo code (e.g. DROPFLOW10)"
                   className="flex-1 px-3 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-white placeholder-zinc-500 text-xs focus:outline-none focus:border-amber-500/50 uppercase"
                 />
                 <button
@@ -172,7 +172,7 @@ export const FloatingCartDrawer: React.FC<FloatingCartDrawerProps> = ({
                 </div>
                 {appliedDiscount > 0 && (
                   <div className="flex justify-between text-emerald-400">
-                    <span>Discount (VANGUARD10)</span>
+                    <span>Discount (DROPFLOW10)</span>
                     <span>-${appliedDiscount.toFixed(2)}</span>
                   </div>
                 )}

@@ -1,4 +1,5 @@
 import { Product } from '../types';
+import powerBankImage from '../../assets/Ultra-Slim-Magnetic-Wireless-Power-Bank-10000mAh-5.jpg';
 
 export const PRODUCTS: Product[] = [
   {
@@ -225,10 +226,9 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 280,
     category: 'wearables',
     collection: 'travel-tech',
-    mainImage: 'https://images.unsplash.com/photo-1609592424109-dd9892f1b177?auto=format&fit=crop&w=1200&q=80',
+    mainImage: powerBankImage,
     gallery: [
-      'https://images.unsplash.com/photo-1609592424109-dd9892f1b177?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80'
+      powerBankImage
     ],
     description: 'Thinner than an iPhone at 11mm. Built with high-density solid-state battery cells wrapped in brushed titanium casing with real-time OLED output display and 20W PD USB-C bidirectional pass-through charging.',
     features: [

@@ -112,14 +112,21 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center gap-3">
           <button
             onClick={() => onNavigate('home')}
-            className="text-left focus:outline-none"
+            className="flex items-center gap-2.5 text-left focus:outline-none group"
           >
-            <span className="text-2xl font-black tracking-widest bg-gradient-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent">
-              DropFlow
-            </span>
-            <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block -mt-1">
-              STUDIO & LIVING
-            </span>
+            <svg className="w-8 h-8 transition-transform duration-300 group-hover:scale-105 shrink-0" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="48" fill="#09090b" stroke="#f59e0b" stroke-width="4"/>
+              <path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <span className="text-2xl font-black tracking-widest bg-gradient-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent block">
+                DropFlow
+              </span>
+              <span className="text-[9px] font-bold tracking-widest text-zinc-500 uppercase block -mt-1">
+                STUDIO & LIVING
+              </span>
+            </div>
           </button>
         </div>
 
