@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View product details, specifications, and purchase from DropFlow Studio & Living.">
+  <title>Product — DropFlow Studio & Living</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-main img { transition: opacity 0.2s ease; }
+    .color-picker-section { margin-bottom: 1.5rem; }
+    .detail-desc { font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.5rem; }
+    .section-divider { height: 1px; background: var(--border); margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" role="banner">
+    <div class="inner">
+      <span class="flash-badge">Flash Sale</span>
+      <span>Up to 25% OFF Studio Series + Free Express Air Shipping</span>
+      <span class="timer" id="flash-timer" aria-label="Flash sale countdown">02:48:12</span>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="DropFlow Studio & Living — Home">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text"><span class="logo-name">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>`r`n        <a href="categories.html">Categories</a>`r`n        <a href="shop.html?collection=studio-series">Collections</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-wrapper" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="search-input" class="search-input-field" placeholder="Search products..." autocomplete="off" aria-label="Search products" aria-controls="search-results">
+          <div id="search-results" class="search-results-dropdown" role="listbox"></div>
+        </div>
+        <a href="account.html" class="icon-btn" aria-label="My account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        <a href="cart.html" class="cart-btn" aria-label="Shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-badge" aria-live="polite" style="display:none;">0</span></a>
+        <button id="hamburger-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-nav-overlay" aria-hidden="true"></div>
+  <nav id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="site-logo"><svg width="28" height="28" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="logo-text"><span class="logo-name" style="font-size:1rem;">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div></a>
+      <button id="mobile-nav-close" aria-label="Close navigation">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a>
+      <a href="shop.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Shop</a>`r`n      <a href="categories.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Categories</a>
+      <a href="about.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>About</a>
+      <a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Contact</a>
+      <a href="cart.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Cart <span class="cart-badge" style="position:relative;top:0;right:0;display:none;margin-left:0.5rem;"></span></a>
+      <a href="account.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Account</a>
+    </div>
+    <div class="mobile-search-area">
+      <input type="search" id="mobile-search-input" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+      <div id="mobile-search-results"></div>
+    </div>
+  </nav>
+
+  <main id="main-content" id="product-detail-section">
+
+    <!-- Breadcrumb -->
+    <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:0.75rem 0;">
+      <div class="container">
+        <nav aria-label="Breadcrumb" style="font-size:0.8125rem;color:var(--text-muted);">
+          <a href="index.html" style="color:var(--text-muted);text-decoration:none;">Home</a>
+          <span style="margin:0 0.5rem;">›</span>
+          <a href="shop.html" style="color:var(--text-muted);text-decoration:none;">Shop</a>
+          <span style="margin:0 0.5rem;">›</span>
+          <span style="color:var(--text-primary);font-weight:600;" id="pd-breadcrumb">Product</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section id="product-detail-section" aria-label="Product details">
+      <div class="container">
+        <div class="product-detail-grid">
+
+          <!-- Gallery -->
+          <div>
+            <div class="gallery-main">
+              <img id="gallery-main-img" src="" alt="" referrerpolicy="no-referrer">
+            </div>
+            <div class="gallery-thumbs" id="gallery-thumbs" role="list" aria-label="Product images"></div>
+          </div>
+
+          <!-- Info -->
+          <div class="product-detail-info">
+            <div class="product-detail-rating" id="pd-rating"></div>
+            <h1 id="pd-title"></h1>
+            <p class="product-detail-subtitle" id="pd-subtitle"></p>
+
+            <div class="product-detail-price" id="pd-price"></div>
+
+            <div class="stock-indicator" id="pd-stock"></div>
+
+            <p class="detail-desc" id="pd-desc"></p>
+
+            <ul class="features-list" id="pd-features" aria-label="Product features"></ul>
+
+            <!-- Colors -->
+            <div class="color-picker-section">
+              <p class="color-picker-label" id="pd-color-label">Color</p>
+              <div class="color-picker" id="pd-colors" role="group" aria-label="Select color"></div>
+            </div>
+
+            <!-- Quantity -->
+            <p class="qty-label">Quantity</p>
+            <div class="qty-picker" role="group" aria-label="Select quantity">
+              <button class="qty-btn" id="qty-minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-display" id="qty-display" aria-live="polite" aria-label="Quantity">1</span>
+              <button class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
+            </div>
+
+            <!-- CTAs -->
+            <div class="detail-ctas">
+              <button id="pd-add-to-cart" class="btn btn-primary">Add to Cart</button>
+              <button id="pd-buy-now" class="btn btn-secondary">Buy Now</button>
+            </div>
+
+            <!-- Trust -->
+            <div style="display:flex;flex-direction:column;gap:0.5rem;padding:1.25rem;background:var(--bg-secondary);border-radius:var(--radius-lg);border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:0.625rem;font-size:0.8125rem;color:var(--text-secondary);">
+                <span style="color:var(--success);">✓</span> Free express shipping on orders over $150
+              </div>
+              <div style="display:flex;align-items:center;gap:0.625rem;font-size:0.8125rem;color:var(--text-secondary);">
+                <span style="color:var(--success);">✓</span> 30-Day hassle-free returns
+              </div>
+              <div style="display:flex;align-items:center;gap:0.625rem;font-size:0.8125rem;color:var(--text-secondary);">
+                <span style="color:var(--success);">✓</span> 2-Year global hardware warranty
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <div class="section-divider"></div>
+    <section class="specs-section" aria-labelledby="specs-heading">
+      <div class="container">
+        <h2 class="section-title" id="specs-heading" style="margin-bottom:1.5rem;">Technical Specifications</h2>
+        <table class="specs-table" aria-label="Product specifications">
+          <tbody id="specs-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <div class="section-divider"></div>
+    <section class="section" style="background:var(--bg-secondary);" aria-labelledby="related-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">You May Also Like</span>
+          <h2 class="section-title" id="related-heading">Related Products</h2>
+        </div>
+        <div class="product-grid" id="related-grid" role="list" aria-label="Related products"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><svg width="32" height="32" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="logo-text"><span class="logo-name">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div></a>
+          <p>Reinventing DTC e-commerce through beryllium acoustic engineering, circadian ambient lighting, and global express fulfillment.</p>
+          <form class="footer-newsletter-form" novalidate><input type="email" placeholder="Your email..." required aria-label="Newsletter signup"><button type="submit" class="btn btn-primary">Join</button></form>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="shop.html?category=audio">Acoustics &amp; Audio</a></li><li><a href="shop.html?category=lighting">Circadian Lighting</a></li><li><a href="shop.html?category=desk-accessories">Desk Architecture</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="contact.html#faq">Returns &amp; Warranty</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="account.html">My Account</a></li><li><a href="cart.html">Cart</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> DropFlow Studio &amp; Living Inc. All rights reserved.</p>
+        <div class="footer-payment"><span>256-Bit SSL Encrypted</span><span>•</span><span>Visa • Mastercard • Apple Pay • Google Pay</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    // Update breadcrumb
+    const params = new URLSearchParams(window.location.search);
+    const pid = params.get('id');
+    if (pid && typeof PRODUCTS !== 'undefined') {
+      const p = PRODUCTS.find(x => x.id === pid);
+      if (p) {
+        const bc = document.getElementById('pd-breadcrumb');
+        if (bc) bc.textContent = p.title;
+      }
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about DropFlow Studio & Living's mission, engineering philosophy, and global fulfillment network.">
+  <title>About — DropFlow Studio & Living</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" role="banner">
+    <div class="inner">
+      <span class="flash-badge">Flash Sale</span>
+      <span>Up to 25% OFF Studio Series + Free Express Air Shipping</span>
+      <span class="timer" id="flash-timer" aria-label="Flash sale countdown">02:48:12</span>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="DropFlow Studio & Living — Home">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text"><span class="logo-name">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>`r`n        <a href="categories.html">Categories</a>`r`n        <a href="shop.html?collection=studio-series">Collections</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-wrapper" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="search-input" class="search-input-field" placeholder="Search products..." autocomplete="off" aria-label="Search products" aria-controls="search-results">
+          <div id="search-results" class="search-results-dropdown" role="listbox"></div>
+        </div>
+        <a href="account.html" class="icon-btn" aria-label="My account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        <a href="cart.html" class="cart-btn" aria-label="Shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-badge" aria-live="polite" style="display:none;">0</span></a>
+        <button id="hamburger-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-nav-overlay" aria-hidden="true"></div>
+  <nav id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="site-logo"><svg width="28" height="28" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="logo-text"><span class="logo-name" style="font-size:1rem;">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div></a>
+      <button id="mobile-nav-close" aria-label="Close navigation">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a>
+      <a href="shop.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Shop</a>`r`n      <a href="categories.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Categories</a>
+      <a href="about.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg>About</a>
+      <a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Contact</a>
+      <a href="cart.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Cart <span class="cart-badge" style="position:relative;top:0;right:0;display:none;margin-left:0.5rem;"></span></a>
+      <a href="account.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Account</a>
+    </div>
+    <div class="mobile-search-area"><input type="search" id="mobile-search-input" placeholder="Search products..." autocomplete="off" aria-label="Search products"><div id="mobile-search-results"></div></div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label">Our Story</span>
+        <h1>Precision Engineered for How You Live &amp; Work</h1>
+        <p>DropFlow was founded on a simple belief: that the tools in your workspace and home should be as remarkable as the work you do in them.</p>
+      </div>
+    </div>
+
+    <!-- Brand Story -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80" alt="DropFlow premium headphones in a studio setting" referrerpolicy="no-referrer" loading="lazy">
+          </div>
+          <div class="about-text">
+            <span class="section-label">Who We Are</span>
+            <h2 id="story-heading">We Obsess Over the Details Others Skip</h2>
+            <p>DropFlow Studio &amp; Living was born in 2023 from a shared frustration: precision-grade hardware was locked inside professional studios and engineering labs, inaccessible to the people who needed it most — focused creators, productive professionals, and discerning home enthusiasts.</p>
+            <p>We partnered directly with the world's finest component manufacturers — from beryllium diaphragm specialists in Stockholm to porcelain ceramicists in Northern Europe — to build a direct-to-consumer catalog of hardware that would previously cost 3–5× as much through retail channels.</p>
+            <p>Every product in the DropFlow catalog starts with a single engineering brief: <strong>What would this look like if we removed every compromise?</strong></p>
+            <a href="shop.html" class="btn btn-primary" style="margin-top:1rem;width:fit-content;">Explore the Catalog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div style="background:var(--bg-secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3.5rem 0;">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;">
+          <div>
+            <p style="font-size:2.25rem;font-weight:900;color:var(--accent);">5</p>
+            <p style="font-size:0.875rem;font-weight:600;color:var(--text-secondary);">Global Fulfillment Hubs</p>
+          </div>
+          <div>
+            <p style="font-size:2.25rem;font-weight:900;color:var(--accent);">99.8%</p>
+            <p style="font-size:0.875rem;font-weight:600;color:var(--text-secondary);">Auto-Fulfillment Rate</p>
+          </div>
+          <div>
+            <p style="font-size:2.25rem;font-weight:900;color:var(--accent);">4.9★</p>
+            <p style="font-size:0.875rem;font-weight:600;color:var(--text-secondary);">Average Product Rating</p>
+          </div>
+          <div>
+            <p style="font-size:2.25rem;font-weight:900;color:var(--accent);">2yr</p>
+            <p style="font-size:0.875rem;font-weight:600;color:var(--text-secondary);">Global Warranty on Everything</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="about-grid" style="direction:rtl;">
+          <div class="about-img" style="direction:ltr;">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=80" alt="DropFlow Aura ceramic lamp illuminating a workspace" referrerpolicy="no-referrer" loading="lazy">
+          </div>
+          <div class="about-text" style="direction:ltr;">
+            <span class="section-label">Our Mission</span>
+            <h2 id="mission-heading">Circadian Living Through Engineering Excellence</h2>
+            <p>The body thrives when its environment is tuned to its biological rhythms. Our Circadian Lighting line was developed in collaboration with human factors ergonomists and sleep scientists to deliver full-spectrum LED technology that adapts your workspace environment across daylight cycles.</p>
+            <p>Our Studio Series audio products use beryllium acoustic diaphragms — a material used exclusively in professional studio monitor speakers — bringing pro-grade soundstage accuracy to personal listening and remote work communication.</p>
+            <p>This is our mission: to democratize precision engineering, one category at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press -->
+    <section class="press-section" id="press" aria-labelledby="press-heading">
+      <div class="container">
+        <span class="section-label">Media Coverage</span>
+        <h2 id="press-heading">What the Press Says About DropFlow</h2>
+        <div class="press-quotes">
+          <div class="press-quote">
+            <blockquote>"DropFlow delivers true DTC craftsmanship and reliable global shipping."</blockquote>
+            <p class="press-outlet">TechCrunch</p>
+          </div>
+          <div class="press-quote">
+            <blockquote>"Apple-level minimalist aesthetics combined with circadian science and incredible audio clarity."</blockquote>
+            <p class="press-outlet">WIRED Magazine</p>
+          </div>
+          <div class="press-quote">
+            <blockquote>"The future of DTC e-commerce: instant dispatch, seamless shopping, and unmatched product engineering."</blockquote>
+            <p class="press-outlet">Forbes Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="newsletter-section" aria-labelledby="about-cta-heading">
+      <div class="container">
+        <span class="section-label">Join Us</span>
+        <h2 id="about-cta-heading">Start Building Your Precision Workspace</h2>
+        <p>Browse the full DropFlow catalog and experience the difference of hardware without compromise.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+          <a href="shop.html" class="btn btn-primary">Shop All Products</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><svg width="32" height="32" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#111827" stroke="#d97706" stroke-width="4"/><path d="M30 65C30 65 40 35 50 35C60 35 70 65 70 65" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 55C40 55 45 45 50 45C55 45 60 55 60 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="logo-text"><span class="logo-name">DropFlow</span><span class="logo-sub">STUDIO &amp; LIVING</span></div></a>
+          <p>Reinventing DTC e-commerce through beryllium acoustic engineering, circadian ambient lighting, and global express fulfillment.</p>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="shop.html?category=audio">Acoustics &amp; Audio</a></li><li><a href="shop.html?category=lighting">Circadian Lighting</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="contact.html#faq">Returns &amp; Warranty</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="account.html">My Account</a></li><li><a href="cart.html">Cart</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> DropFlow Studio &amp; Living Inc. All rights reserved.</p>
+        <div class="footer-payment"><span>256-Bit SSL Encrypted</span><span>•</span><span>Visa • Mastercard • Apple Pay • Google Pay</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
