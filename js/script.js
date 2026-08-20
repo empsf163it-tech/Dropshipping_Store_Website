@@ -1,5 +1,5 @@
-﻿// DropFlow Studio & Living â€” Product Data
-// HTML5 + CSS3 + Vanilla JavaScript â€” No framework required
+﻿// DropFlow Studio & Living — Product Data
+// HTML5 + CSS3 + Vanilla JavaScript — No framework required
 
 const PRODUCTS = [
   {
@@ -106,7 +106,7 @@ const PRODUCTS = [
       'Single-Block Milled Aerospace Grade Aluminium',
       'Interchangeable Merino Wool Felt Top Insert',
       'Anti-Slip Natural Rubber Base Geometry',
-      'Tapered 8Â° Incline for Neutral Ergonomic Angle'
+      'Tapered 8° Incline for Neutral Ergonomic Angle'
     ],
     specs: [
       { label: 'Length', value: '360mm (Fits 75% & TKL Keyboards)' },
@@ -233,7 +233,7 @@ const PRODUCTS = [
     gallery: [
       'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=1200&q=80'
     ],
-    description: 'Maintains your preferred drink temperature (50Â°C to 62.5Â°C) for up to 3 hours or all day on the included wireless charging coaster.',
+    description: 'Maintains your preferred drink temperature (50°C to 62.5°C) for up to 3 hours or all day on the included wireless charging coaster.',
     features: [
       'App-Controlled Temperature Presets',
       'Auto-Sleep Sensing Motion Sensor',
@@ -283,12 +283,12 @@ const PRODUCTS = [
 ];
 
 const CATEGORIES = [
-  { id: 'all', name: 'All Products', emoji: 'âœ¦' },
-  { id: 'audio', name: 'Acoustics & Audio', emoji: 'ðŸŽ§' },
-  { id: 'lighting', name: 'Circadian Lighting', emoji: 'ðŸ’¡' },
-  { id: 'desk-accessories', name: 'Desk Architecture', emoji: 'ðŸ–¥ï¸' },
-  { id: 'lifestyle', name: 'Everyday Carry & Travel', emoji: 'ðŸŽ’' },
-  { id: 'wearables', name: 'Power & Wearables', emoji: 'âš¡' }
+  { id: 'all', name: 'All Products', emoji: '✦' },
+  { id: 'audio', name: 'Acoustics & Audio', emoji: '🎧' },
+  { id: 'lighting', name: 'Circadian Lighting', emoji: '💡' },
+  { id: 'desk-accessories', name: 'Desk Architecture', emoji: '🖥️' },
+  { id: 'lifestyle', name: 'Everyday Carry & Travel', emoji: '🎒' },
+  { id: 'wearables', name: 'Power & Wearables', emoji: '⚡' }
 ];
 
 const COLLECTIONS = [
@@ -414,7 +414,7 @@ function searchProducts(query) {
   );
 }
 
-// DropFlow Studio & Living â€” Cart Logic
+// DropFlow Studio & Living — Cart Logic
 // Uses localStorage for persistence
 
 const CART_KEY = 'dropflow_cart';
@@ -504,7 +504,7 @@ function showAddedToCartFeedback() {
     toast.setAttribute('aria-live', 'polite');
     document.body.appendChild(toast);
   }
-  toast.textContent = 'âœ“ Added to cart!';
+  toast.textContent = '✓ Added to cart!';
   toast.classList.add('show');
   clearTimeout(toast._timer);
   toast._timer = setTimeout(() => toast.classList.remove('show'), 2200);
@@ -513,7 +513,7 @@ function showAddedToCartFeedback() {
 // Initialize badge on page load
 document.addEventListener('DOMContentLoaded', updateCartBadge);
 
-// DropFlow Studio & Living â€” Navigation Module
+// DropFlow Studio & Living — Navigation Module
 // Hamburger menu, mobile nav, search overlay
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
   const mobileNavLinks = document.querySelectorAll('#mobile-nav a, #mobile-nav .nav-link');
 
-  // â”€â”€ Open Mobile Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Open Mobile Menu ──────────────────────────────────────────────────────
   function openMenu() {
     if (!mobileNav || !hamburgerBtn) return;
     mobileNav.classList.add('is-open');
@@ -537,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (firstLink) firstLink.focus();
   }
 
-  // â”€â”€ Close Mobile Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Close Mobile Menu ─────────────────────────────────────────────────────
   function closeMenu() {
     if (!mobileNav || !hamburgerBtn) return;
     mobileNav.classList.remove('is-open');
@@ -548,7 +548,7 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburgerBtn.focus();
   }
 
-  // â”€â”€ Event Listeners â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Event Listeners ───────────────────────────────────────────────────────
   if (hamburgerBtn) {
     hamburgerBtn.addEventListener('click', function () {
       const isOpen = mobileNav.classList.contains('is-open');
@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // â”€â”€ Header Scroll Behavior â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Header Scroll Behavior ─────────────────────────────────────────────────
   const header = document.querySelector('.site-header');
   if (header) {
     let lastScroll = 0;
@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   }
 
-  // â”€â”€ Active Nav Link Highlight â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Active Nav Link Highlight ─────────────────────────────────────────────
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.desktop-nav a, .mobile-nav-links a').forEach(link => {
     const href = link.getAttribute('href');
@@ -600,7 +600,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // â”€â”€ Search Functionality â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Search Functionality ──────────────────────────────────────────────────
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
   const mobileSearchInput = document.getElementById('mobile-search-input');
@@ -648,7 +648,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // â”€â”€ Flash Sale Countdown Timer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Flash Sale Countdown Timer ─────────────────────────────────────────────
   const timerEl = document.getElementById('flash-timer');
   if (timerEl) {
     // Start at 2h 48m 12s
@@ -670,12 +670,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// DropFlow Studio & Living â€” Main Script
+// DropFlow Studio & Living — Main Script
 // Page-specific interactivity
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // â”€â”€ Newsletter Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Newsletter Form ───────────────────────────────────────────────────────
   const newsletterForms = document.querySelectorAll('.newsletter-form');
   newsletterForms.forEach(form => {
     form.addEventListener('submit', function (e) {
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // â”€â”€ FAQ Accordion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── FAQ Accordion ─────────────────────────────────────────────────────────
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
@@ -703,7 +703,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // â”€â”€ Home: Render Collections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Home: Render Collections ──────────────────────────────────────────────
   const collectionsGrid = document.getElementById('collections-grid');
   if (collectionsGrid && typeof COLLECTIONS !== 'undefined') {
     collectionsGrid.innerHTML = COLLECTIONS.map(col => `
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function () {
     `).join('');
   }
 
-  // â”€â”€ Home: Render Trending Products â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Home: Render Trending Products ────────────────────────────────────────
   const trendingGrid = document.getElementById('trending-grid');
   if (trendingGrid && typeof PRODUCTS !== 'undefined') {
     const trending = PRODUCTS.filter(p => p.isBestSeller || p.isFlashSale).slice(0, 4);
@@ -725,12 +725,12 @@ document.addEventListener('DOMContentLoaded', function () {
     initProductCards(trendingGrid);
   }
 
-  // â”€â”€ Home: Render Reviews â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Home: Render Reviews ──────────────────────────────────────────────────
   const reviewsGrid = document.getElementById('reviews-grid');
   if (reviewsGrid && typeof CUSTOMER_REVIEWS !== 'undefined') {
     reviewsGrid.innerHTML = CUSTOMER_REVIEWS.map(r => `
       <div class="review-card fade-in">
-        <div class="review-stars">${'â˜…'.repeat(r.rating)}</div>
+        <div class="review-stars">${'★'.repeat(r.rating)}</div>
         <h4 class="review-title">${r.title}</h4>
         <p class="review-comment">${r.comment}</p>
         <div class="review-author">
@@ -739,13 +739,13 @@ document.addEventListener('DOMContentLoaded', function () {
             <p class="review-author-name">${r.author}</p>
             <p class="review-author-location">${r.location}</p>
           </div>
-          ${r.verifiedPurchase ? '<span class="verified-badge">âœ“ Verified</span>' : ''}
+          ${r.verifiedPurchase ? '<span class="verified-badge">✓ Verified</span>' : ''}
         </div>
       </div>
     `).join('');
   }
 
-  // â”€â”€ Shop Page: Category Filter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Shop Page: Category Filter ────────────────────────────────────────────
   const shopGrid = document.getElementById('shop-grid');
   const categoryTabs = document.querySelectorAll('.category-tab');
 
@@ -794,7 +794,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initProductCards(shopGrid);
   }
 
-  // â”€â”€ Product Card Renderer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Product Card Renderer ─────────────────────────────────────────────────
   function renderProductCard(p) {
     const discount = getDiscountPercent(p);
     const viewingCount = 12 + Math.floor(p.id.length * 2.5);
@@ -824,7 +824,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="product-card-meta">
             <span class="product-category">${p.category}</span>
             <div class="product-rating">
-              <span class="star">â˜…</span>
+              <span class="star">★</span>
               <span class="rating-num">${p.rating}</span>
               <span class="review-count">(${p.reviewsCount})</span>
             </div>
@@ -894,7 +894,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // â”€â”€ Product Detail Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Product Detail Page ───────────────────────────────────────────────────
   const productDetailSection = document.getElementById('product-detail-section');
   if (productDetailSection) {
     const params = new URLSearchParams(window.location.search);
@@ -907,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Update page title
-    document.title = product.title + ' â€” DropFlow Studio & Living';
+    document.title = product.title + ' — DropFlow Studio & Living';
 
     // Gallery
     const mainImg = document.getElementById('gallery-main-img');
@@ -944,7 +944,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (titleEl) titleEl.textContent = product.title;
     if (subtitleEl) subtitleEl.textContent = product.subtitle;
-    if (ratingEl) ratingEl.innerHTML = `<span style="color:var(--accent);font-weight:700;">â˜… ${product.rating}</span> <span style="color:var(--text-muted);">(${product.reviewsCount} reviews)</span>`;
+    if (ratingEl) ratingEl.innerHTML = `<span style="color:var(--accent);font-weight:700;">★ ${product.rating}</span> <span style="color:var(--text-muted);">(${product.reviewsCount} reviews)</span>`;
 
     if (priceEl) {
       const discount = getDiscountPercent(product);
@@ -957,14 +957,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (stockEl) {
       const isLow = product.stockStatus === 'low-stock';
-      stockEl.innerHTML = `<span class="stock-dot ${product.stockStatus}"></span> <span class="${isLow ? 'stock-low-stock' : 'stock-in-stock'}">${isLow ? `Only ${product.stockLevel} left in stock!` : 'In Stock â€” Ships within 24h'}</span>`;
+      stockEl.innerHTML = `<span class="stock-dot ${product.stockStatus}"></span> <span class="${isLow ? 'stock-low-stock' : 'stock-in-stock'}">${isLow ? `Only ${product.stockLevel} left in stock!` : 'In Stock — Ships within 24h'}</span>`;
     }
 
     if (descEl) descEl.textContent = product.description;
 
     if (featuresEl && product.features) {
       featuresEl.innerHTML = product.features.map(f => `
-        <li class="feature-item"><span class="feature-check">âœ“</span> ${f}</li>
+        <li class="feature-item"><span class="feature-check">✓</span> ${f}</li>
       `).join('');
     }
 
@@ -1016,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (addToCartBtn) {
       addToCartBtn.addEventListener('click', function () {
         addToCart(product, selectedColor, qty);
-        this.textContent = 'âœ“ Added to Cart!';
+        this.textContent = '✓ Added to Cart!';
         this.style.background = 'var(--success)';
         setTimeout(() => {
           this.textContent = 'Add to Cart';
@@ -1044,7 +1044,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // â”€â”€ Cart Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Cart Page ─────────────────────────────────────────────────────────────
   const cartSection = document.getElementById('cart-section');
   if (cartSection) {
     renderCartPage();
@@ -1082,7 +1082,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="cart-item-controls">
             <span class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
             <div class="cart-qty-controls">
-              <button class="cart-qty-btn" data-action="minus" data-id="${item.id}" data-color="${item.selectedColor}" aria-label="Decrease quantity">âˆ’</button>
+              <button class="cart-qty-btn" data-action="minus" data-id="${item.id}" data-color="${item.selectedColor}" aria-label="Decrease quantity">−</button>
               <span class="cart-qty-num">${item.quantity}</span>
               <button class="cart-qty-btn" data-action="plus" data-id="${item.id}" data-color="${item.selectedColor}" aria-label="Increase quantity">+</button>
             </div>
@@ -1128,14 +1128,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // â”€â”€ Contact Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Contact Form ──────────────────────────────────────────────────────────
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       const btn = this.querySelector('button[type="submit"]');
       if (btn) {
-        btn.textContent = 'âœ“ Message Sent!';
+        btn.textContent = '✓ Message Sent!';
         btn.style.background = 'var(--success)';
         this.reset();
         setTimeout(() => {
@@ -1146,7 +1146,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // â”€â”€ Account Form Tabs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Account Form Tabs ─────────────────────────────────────────────────────
   const accountTabs = document.querySelectorAll('.account-tab-btn');
   accountTabs.forEach(tab => {
     tab.addEventListener('click', function () {
