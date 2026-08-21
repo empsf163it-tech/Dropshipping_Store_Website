@@ -22,11 +22,11 @@ const PRODUCTS = [
     reviewsCount: 142,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat',
+    mainImage: 'https://images.unsplash.com/photo-1616628188540-924ad3f5f2b5?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+1',
-      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+2',
-      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+3'
+      'https://images.unsplash.com/photo-1616628188540-924ad3f5f2b5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Obsidian Black', hex: '#111111' },
@@ -48,10 +48,10 @@ const PRODUCTS = [
     reviewsCount: 89,
     category: 'audio',
     collection: 'studio-series',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Studio+Monitors',
+    mainImage: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Studio+Monitors+1',
-      'https://via.placeholder.com/800x800.png?text=Studio+Monitors+2'
+      'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Matte White', hex: '#F5F5F5' },
@@ -73,10 +73,10 @@ const PRODUCTS = [
     reviewsCount: 310,
     category: 'lighting',
     collection: 'minimalist-living',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Aura+Lightbar',
+    mainImage: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Aura+Lightbar+1',
-      'https://via.placeholder.com/800x800.png?text=Aura+Lightbar+2'
+      'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Space Gray', hex: '#4A4A4A' }
@@ -97,9 +97,9 @@ const PRODUCTS = [
     reviewsCount: 56,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Cable+Organizer',
+    mainImage: 'https://images.unsplash.com/photo-1586953208270-767889fa9b00?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Cable+Organizer+1'
+      'https://images.unsplash.com/photo-1586953208270-767889fa9b00?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Graphite', hex: '#333333' }
@@ -124,10 +124,10 @@ const PRODUCTS = [
     reviewsCount: 412,
     category: 'lifestyle',
     collection: 'travel-tech',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Nomad+Backpack',
+    mainImage: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Nomad+Backpack+1',
-      'https://via.placeholder.com/800x800.png?text=Nomad+Backpack+2'
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1622560480654-996b8eda4ce2?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Midnight', hex: '#191919' },
@@ -150,10 +150,10 @@ const PRODUCTS = [
     reviewsCount: 890,
     category: 'audio',
     collection: 'travel-tech',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Acoustic+Pods',
+    mainImage: 'https://images.unsplash.com/photo-1590658268037-6bf12f032f55?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Acoustic+Pods+1',
-      'https://via.placeholder.com/800x800.png?text=Acoustic+Pods+2'
+      'https://images.unsplash.com/photo-1590658268037-6bf12f032f55?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Ceramic White', hex: '#FFFFFF' },
@@ -175,9 +175,9 @@ const PRODUCTS = [
     reviewsCount: 65,
     category: 'lighting',
     collection: 'minimalist-living',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Floor+Lamp',
+    mainImage: 'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Floor+Lamp+1'
+      'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Brushed Steel', hex: '#7A7A7A' }
@@ -198,10 +198,10 @@ const PRODUCTS = [
     reviewsCount: 110,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Ergo+Chair',
+    mainImage: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Ergo+Chair+1',
-      'https://via.placeholder.com/800x800.png?text=Ergo+Chair+2'
+      'https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Ash Grey', hex: '#B2B2B2' },
@@ -227,9 +227,9 @@ const PRODUCTS = [
     reviewsCount: 340,
     category: 'wearables',
     collection: 'travel-tech',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Quantum+Power',
+    mainImage: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Quantum+Power+1'
+      'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Gunmetal', hex: '#2C3539' }
@@ -250,9 +250,9 @@ const PRODUCTS = [
     reviewsCount: 220,
     category: 'wearables',
     collection: 'executive-suite',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Float+Charger',
+    mainImage: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Float+Charger+1'
+      'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Silver', hex: '#C0C0C0' },
@@ -274,9 +274,9 @@ const PRODUCTS = [
     reviewsCount: 154,
     category: 'lifestyle',
     collection: 'travel-tech',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Coffee+Kit',
+    mainImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Coffee+Kit+1'
+      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Titanium', hex: '#878681' }
@@ -297,9 +297,9 @@ const PRODUCTS = [
     reviewsCount: 88,
     category: 'desk-accessories',
     collection: 'studio-series',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Headphone+Stand',
+    mainImage: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Headphone+Stand+1'
+      'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Matte Black', hex: '#111111' }
@@ -324,9 +324,9 @@ const PRODUCTS = [
     reviewsCount: 204,
     category: 'audio',
     collection: 'studio-series',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Boom+Arm',
+    mainImage: 'https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Boom+Arm+1'
+      'https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Black', hex: '#000000' }
@@ -347,9 +347,9 @@ const PRODUCTS = [
     reviewsCount: 450,
     category: 'lighting',
     collection: 'minimalist-living',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Smart+Bulbs',
+    mainImage: 'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Smart+Bulbs+1'
+      'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Frosted Glass', hex: '#EAEAEA' }
@@ -371,9 +371,9 @@ const PRODUCTS = [
     reviewsCount: 42,
     category: 'lifestyle',
     collection: 'executive-suite',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Briefcase',
+    mainImage: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Briefcase+1'
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Carbon Weave', hex: '#2B2B2B' }
@@ -394,9 +394,9 @@ const PRODUCTS = [
     reviewsCount: 190,
     category: 'desk-accessories',
     collection: 'studio-series',
-    mainImage: 'https://via.placeholder.com/800x800.png?text=Split+Keyboard',
+    mainImage: 'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://via.placeholder.com/800x800.png?text=Split+Keyboard+1'
+      'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Almond', hex: '#EED9C4' },
