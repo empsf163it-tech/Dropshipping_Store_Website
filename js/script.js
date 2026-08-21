@@ -1,6 +1,13 @@
 // DropFlow Studio & Living — Product Data
 // HTML5 + CSS3 + Vanilla JavaScript — No framework required
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
 const PRODUCTS = [
   // ==========================================
   // BOUGHT PRODUCTS (Order History)
