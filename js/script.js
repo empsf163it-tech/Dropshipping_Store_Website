@@ -1,7 +1,406 @@
-﻿// DropFlow Studio & Living — Product Data
+// DropFlow Studio & Living — Product Data
 // HTML5 + CSS3 + Vanilla JavaScript — No framework required
 
 const PRODUCTS = [
+  // ==========================================
+  // BOUGHT PRODUCTS (Order History)
+  // ==========================================
+  {
+    id: 'lumen-desk-mat-pro',
+    title: 'Lumen Desk Mat Pro',
+    subtitle: 'Magnetic Cable Management & Vegan Leather.',
+    price: 89,
+    originalPrice: 110,
+    rating: 4.8,
+    reviewsCount: 142,
+    category: 'desk-accessories',
+    collection: 'executive-suite',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+1',
+      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+2',
+      'https://via.placeholder.com/800x800.png?text=Lumen+Desk+Mat+3'
+    ],
+    colors: [
+      { name: 'Obsidian Black', hex: '#111111' },
+      { name: 'Saddle Brown', hex: '#8B5A2B' }
+    ],
+    features: ['Magnetic charging zone', 'Water-resistant surface', 'Non-slip natural rubber base'],
+    description: 'Transform your workspace with the Lumen Desk Mat Pro. Featuring integrated magnetic zones to hide your cables and a premium vegan leather finish that ages beautifully.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 120
+  },
+  {
+    id: 'beryllium-studio-monitors',
+    title: 'Beryllium Studio Monitors',
+    subtitle: 'Uncolored Audio Fidelity for Desktop.',
+    price: 499,
+    originalPrice: 550,
+    rating: 5.0,
+    reviewsCount: 89,
+    category: 'audio',
+    collection: 'studio-series',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Studio+Monitors',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Studio+Monitors+1',
+      'https://via.placeholder.com/800x800.png?text=Studio+Monitors+2'
+    ],
+    colors: [
+      { name: 'Matte White', hex: '#F5F5F5' },
+      { name: 'Carbon Black', hex: '#222222' }
+    ],
+    features: ['Beryllium tweeters', 'Active Class-D amplification', 'Acoustic isolation pads included'],
+    description: 'Hear exactly what the artist intended. Our studio monitors use aerospace-grade beryllium tweeters for zero distortion at any volume.',
+    isNew: false,
+    stockStatus: 'medium',
+    stockLevel: 45
+  },
+  {
+    id: 'aura-ambient-lightbar',
+    title: 'Aura Ambient Lightbar',
+    subtitle: 'Glare-free screen illumination.',
+    price: 129,
+    originalPrice: 150,
+    rating: 4.7,
+    reviewsCount: 310,
+    category: 'lighting',
+    collection: 'minimalist-living',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Aura+Lightbar',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Aura+Lightbar+1',
+      'https://via.placeholder.com/800x800.png?text=Aura+Lightbar+2'
+    ],
+    colors: [
+      { name: 'Space Gray', hex: '#4A4A4A' }
+    ],
+    features: ['Asymmetrical optical design', 'Auto-dimming ambient sensor', 'Ra95 High color rendering'],
+    description: 'Prevent eye strain during late-night sessions. The Aura Lightbar mounts perfectly to your monitor, illuminating only your desk area with zero screen glare.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 200
+  },
+  {
+    id: 'graphite-cable-organizer',
+    title: 'Graphite Cable Organizer',
+    subtitle: 'Machined aluminum cord control.',
+    price: 35,
+    originalPrice: 45,
+    rating: 4.5,
+    reviewsCount: 56,
+    category: 'desk-accessories',
+    collection: 'executive-suite',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Cable+Organizer',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Cable+Organizer+1'
+    ],
+    colors: [
+      { name: 'Graphite', hex: '#333333' }
+    ],
+    features: ['Solid CNC aluminum block', 'Micro-suction base', 'Holds up to 4 thick cables'],
+    description: 'Keep your charging cables exactly where you left them. A solid, heavy block of aluminum that anchors to your desk without sticky residue.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 340
+  },
+
+  // ==========================================
+  // WISHLIST PRODUCTS
+  // ==========================================
+  {
+    id: 'nomad-titanium-backpack',
+    title: 'Nomad Titanium Backpack',
+    subtitle: 'Weatherproof. Anti-theft. Ultra-light.',
+    price: 249,
+    originalPrice: 299,
+    rating: 4.9,
+    reviewsCount: 412,
+    category: 'lifestyle',
+    collection: 'travel-tech',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Nomad+Backpack',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Nomad+Backpack+1',
+      'https://via.placeholder.com/800x800.png?text=Nomad+Backpack+2'
+    ],
+    colors: [
+      { name: 'Midnight', hex: '#191919' },
+      { name: 'Olive Drab', hex: '#4B5320' }
+    ],
+    features: ['Ballistic nylon shell', 'Hidden titanium locking mechanism', '16-inch suspended laptop sleeve'],
+    description: 'The ultimate daily carry. Built from military-grade ballistic nylon with a structural titanium locking frame to protect your most valuable tech.',
+    isNew: true,
+    isBestSeller: true,
+    stockStatus: 'medium',
+    stockLevel: 78
+  },
+  {
+    id: 'acoustic-pods-pro',
+    title: 'Acoustic Pods Pro',
+    subtitle: 'Next-generation ANC earbuds.',
+    price: 199,
+    originalPrice: 229,
+    rating: 4.6,
+    reviewsCount: 890,
+    category: 'audio',
+    collection: 'travel-tech',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Acoustic+Pods',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Acoustic+Pods+1',
+      'https://via.placeholder.com/800x800.png?text=Acoustic+Pods+2'
+    ],
+    colors: [
+      { name: 'Ceramic White', hex: '#FFFFFF' },
+      { name: 'Matte Black', hex: '#111111' }
+    ],
+    features: ['32 hours battery life', 'Multi-point Bluetooth 5.3', 'Adaptive transparency mode'],
+    description: 'Silence the world or let it in. Featuring studio-grade drivers in a pocketable format with AI-powered noise cancellation.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 450
+  },
+  {
+    id: 'circadian-floor-lamp',
+    title: 'Circadian Floor Lamp',
+    subtitle: 'Sunlight-mimicking ambient lighting.',
+    price: 399,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 65,
+    category: 'lighting',
+    collection: 'minimalist-living',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Floor+Lamp',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Floor+Lamp+1'
+    ],
+    colors: [
+      { name: 'Brushed Steel', hex: '#7A7A7A' }
+    ],
+    features: ['Dynamic color temperature (2700K - 6500K)', 'Appless touch control', 'Solid marble base'],
+    description: 'A sculptural piece that regulates your sleep cycle. It automatically transitions from bright, cool daylight to warm, melatonin-friendly amber as evening approaches.',
+    isNew: true,
+    stockStatus: 'low',
+    stockLevel: 12
+  },
+  {
+    id: 'executive-ergo-chair',
+    title: 'Executive Ergo Chair',
+    subtitle: 'Gravity-defying spinal support.',
+    price: 899,
+    originalPrice: 1050,
+    rating: 4.8,
+    reviewsCount: 110,
+    category: 'desk-accessories',
+    collection: 'executive-suite',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Ergo+Chair',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Ergo+Chair+1',
+      'https://via.placeholder.com/800x800.png?text=Ergo+Chair+2'
+    ],
+    colors: [
+      { name: 'Ash Grey', hex: '#B2B2B2' },
+      { name: 'Onyx', hex: '#000000' }
+    ],
+    features: ['Dynamic lumbar tracking', 'Cooling mesh weave', 'Machined aluminum skeleton'],
+    description: 'Designed to move with you. The Executive Ergo chair adapts to your spine in real-time, completely eliminating pressure points during marathon sessions.',
+    isNew: false,
+    stockStatus: 'medium',
+    stockLevel: 30
+  },
+
+  // ==========================================
+  // LIKED PRODUCTS
+  // ==========================================
+  {
+    id: 'quantum-power-bank',
+    title: 'Quantum Power Bank',
+    subtitle: '20,000mAh with 100W PD Output.',
+    price: 119,
+    originalPrice: 140,
+    rating: 4.7,
+    reviewsCount: 340,
+    category: 'wearables',
+    collection: 'travel-tech',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Quantum+Power',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Quantum+Power+1'
+    ],
+    colors: [
+      { name: 'Gunmetal', hex: '#2C3539' }
+    ],
+    features: ['Charges a laptop to 50% in 30 mins', 'OLED status display', 'Airline safe capacity'],
+    description: 'Never hunt for a wall outlet again. The Quantum packs enough density to charge your high-performance laptop and phone simultaneously at full speed.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 180
+  },
+  {
+    id: 'magnetic-desk-charger',
+    title: 'Magnetic Float Charger',
+    subtitle: '3-in-1 wireless charging tree.',
+    price: 149,
+    originalPrice: 179,
+    rating: 4.8,
+    reviewsCount: 220,
+    category: 'wearables',
+    collection: 'executive-suite',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Float+Charger',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Float+Charger+1'
+    ],
+    colors: [
+      { name: 'Silver', hex: '#C0C0C0' },
+      { name: 'Black', hex: '#000000' }
+    ],
+    features: ['15W MagSafe compatible', 'Hidden Apple Watch puck', 'Weighted zinc alloy base'],
+    description: 'Elevate your devices. A minimalist, architectural charging stand that powers your phone, watch, and earbuds while hiding all wires.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 210
+  },
+  {
+    id: 'travel-coffee-kit',
+    title: 'Nomad Coffee Kit',
+    subtitle: 'Titanium burr grinder & aeropress.',
+    price: 189,
+    originalPrice: 210,
+    rating: 4.9,
+    reviewsCount: 154,
+    category: 'lifestyle',
+    collection: 'travel-tech',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Coffee+Kit',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Coffee+Kit+1'
+    ],
+    colors: [
+      { name: 'Titanium', hex: '#878681' }
+    ],
+    features: ['Conical titanium burrs', 'Nested travel case', 'Aerospace aluminum body'],
+    description: 'Cafe-quality espresso, anywhere on earth. Our ultra-compact hand grinder and extraction kit is built for the purist on the go.',
+    isNew: true,
+    stockStatus: 'low',
+    stockLevel: 18
+  },
+  {
+    id: 'alloy-headphone-stand',
+    title: 'Alloy Headphone Stand',
+    subtitle: 'Industrial display for premium audio.',
+    price: 79,
+    originalPrice: 99,
+    rating: 4.6,
+    reviewsCount: 88,
+    category: 'desk-accessories',
+    collection: 'studio-series',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Headphone+Stand',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Headphone+Stand+1'
+    ],
+    colors: [
+      { name: 'Matte Black', hex: '#111111' }
+    ],
+    features: ['Curved silicone resting pad', 'Solid 2lb base', 'Integrated cord wrap'],
+    description: 'Give your high-fidelity headphones the pedestal they deserve. Designed to prevent headband denting with a perfectly contoured resting surface.',
+    isNew: false,
+    stockStatus: 'high',
+    stockLevel: 140
+  },
+
+  // ==========================================
+  // OTHER / NEW ARRIVALS
+  // ==========================================
+  {
+    id: 'studio-boom-mic-arm',
+    title: 'Studio Boom Mic Arm',
+    subtitle: 'Silent motion. Hidden cable channel.',
+    price: 119,
+    originalPrice: 140,
+    rating: 4.8,
+    reviewsCount: 204,
+    category: 'audio',
+    collection: 'studio-series',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Boom+Arm',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Boom+Arm+1'
+    ],
+    colors: [
+      { name: 'Black', hex: '#000000' }
+    ],
+    features: ['Internal spring mechanism', 'Toolless tension adjustment', 'Low-profile desk clamp'],
+    description: 'Broadcast-quality mounting. Smooth, completely silent articulation with an internal channel that completely hides your XLR or USB cable.',
+    isNew: true,
+    stockStatus: 'medium',
+    stockLevel: 65
+  },
+  {
+    id: 'zenith-smart-bulb',
+    title: 'Zenith Smart Bulb 2-Pack',
+    subtitle: 'Thread-enabled circadian glow.',
+    price: 59,
+    originalPrice: 70,
+    rating: 4.5,
+    reviewsCount: 450,
+    category: 'lighting',
+    collection: 'minimalist-living',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Smart+Bulbs',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Smart+Bulbs+1'
+    ],
+    colors: [
+      { name: 'Frosted Glass', hex: '#EAEAEA' }
+    ],
+    features: ['Instant Thread network response', '1100 lumens peak brightness', 'Seamless circadian sync'],
+    description: 'Upgrade your existing lamps. These smart bulbs automatically track the sun to provide energizing light during the day and relaxing warmth at night.',
+    isNew: false,
+    isBestSeller: true,
+    stockStatus: 'high',
+    stockLevel: 800
+  },
+  {
+    id: 'carbon-fiber-briefcase',
+    title: 'Carbon Fiber Briefcase',
+    subtitle: 'The modern attaché.',
+    price: 399,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 42,
+    category: 'lifestyle',
+    collection: 'executive-suite',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Briefcase',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Briefcase+1'
+    ],
+    colors: [
+      { name: 'Carbon Weave', hex: '#2B2B2B' }
+    ],
+    features: ['Real 3K carbon fiber shell', 'TSA-approved biometric lock', 'Impact resistant'],
+    description: 'Incredibly light. Unbelievably strong. Make a statement in the boardroom with an attaché case engineered like a hypercar.',
+    isNew: true,
+    stockStatus: 'low',
+    stockLevel: 9
+  },
+  {
+    id: 'ergo-split-keyboard',
+    title: 'Ergo Split Mechanical',
+    subtitle: 'Ortholinear typing bliss.',
+    price: 289,
+    originalPrice: 320,
+    rating: 4.7,
+    reviewsCount: 190,
+    category: 'desk-accessories',
+    collection: 'studio-series',
+    mainImage: 'https://via.placeholder.com/800x800.png?text=Split+Keyboard',
+    gallery: [
+      'https://via.placeholder.com/800x800.png?text=Split+Keyboard+1'
+    ],
+    colors: [
+      { name: 'Almond', hex: '#EED9C4' },
+      { name: 'Slate', hex: '#4A5054' }
+    ],
+    features: ['Hot-swappable switches', 'Fully programmable via QMK', 'Tentable solid brass base'],
+    description: 'Relieve wrist strain instantly. A split, fully programmable mechanical keyboard that allows your hands to rest at their natural shoulder width.',
+    isNew: true,
+    stockStatus: 'medium',
+    stockLevel: 44
+  },
   {
     id: 'horizon-anc-headphones',
     title: 'Horizon Noise-Cancelling Headphones',

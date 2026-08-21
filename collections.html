@@ -189,17 +189,17 @@
         
         // Populate with mock data slices
         if (purchasedGrid) {
-          purchasedGrid.innerHTML = PRODUCTS.slice(0, 3).map(p => renderProductCard(p)).join('');
+          purchasedGrid.innerHTML = PRODUCTS.slice(0, 4).map(p => renderProductCard(p)).join('');
           if (typeof initProductCards === 'function') initProductCards(purchasedGrid);
         }
         
         if (wishlistGrid) {
-          wishlistGrid.innerHTML = PRODUCTS.slice(3, 6).map(p => renderProductCard(p)).join('');
+          wishlistGrid.innerHTML = PRODUCTS.slice(4, 8).map(p => renderProductCard(p)).join('');
           if (typeof initProductCards === 'function') initProductCards(wishlistGrid);
         }
         
         if (likedGrid) {
-          likedGrid.innerHTML = PRODUCTS.slice(6, 10).map(p => renderProductCard(p)).join('');
+          likedGrid.innerHTML = PRODUCTS.slice(8, 12).map(p => renderProductCard(p)).join('');
           if (typeof initProductCards === 'function') initProductCards(likedGrid);
         }
       }
