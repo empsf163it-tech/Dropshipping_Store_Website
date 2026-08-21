@@ -97,9 +97,9 @@ const PRODUCTS = [
     reviewsCount: 56,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b5?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1625772299848-391b6a87d7b5?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Graphite', hex: '#333333' }
