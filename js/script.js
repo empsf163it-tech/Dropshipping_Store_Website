@@ -1561,5 +1561,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Export functions globally so inline scripts on specific pages (like collections.html) can use them
+  window.renderProductCard = renderProductCard;
+  window.initProductCards = initProductCards;
+
 });
 

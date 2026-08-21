@@ -182,27 +182,29 @@
     
     // Render collections using global PRODUCTS and renderProductCard from script.js
     document.addEventListener('DOMContentLoaded', () => {
-      if (typeof PRODUCTS !== 'undefined' && typeof renderProductCard === 'function') {
-        const purchasedGrid = document.getElementById('purchased-grid');
-        const wishlistGrid = document.getElementById('wishlist-grid');
-        const likedGrid = document.getElementById('liked-grid');
-        
-        // Populate with mock data slices
-        if (purchasedGrid) {
-          purchasedGrid.innerHTML = PRODUCTS.slice(0, 4).map(p => renderProductCard(p)).join('');
-          if (typeof initProductCards === 'function') initProductCards(purchasedGrid);
+      setTimeout(() => {
+        if (typeof PRODUCTS !== 'undefined' && typeof window.renderProductCard === 'function') {
+          const purchasedGrid = document.getElementById('purchased-grid');
+          const wishlistGrid = document.getElementById('wishlist-grid');
+          const likedGrid = document.getElementById('liked-grid');
+          
+          // Populate with mock data slices
+          if (purchasedGrid) {
+            purchasedGrid.innerHTML = PRODUCTS.slice(0, 4).map(p => window.renderProductCard(p)).join('');
+            if (typeof window.initProductCards === 'function') window.initProductCards(purchasedGrid);
+          }
+          
+          if (wishlistGrid) {
+            wishlistGrid.innerHTML = PRODUCTS.slice(4, 8).map(p => window.renderProductCard(p)).join('');
+            if (typeof window.initProductCards === 'function') window.initProductCards(wishlistGrid);
+          }
+          
+          if (likedGrid) {
+            likedGrid.innerHTML = PRODUCTS.slice(8, 12).map(p => window.renderProductCard(p)).join('');
+            if (typeof window.initProductCards === 'function') window.initProductCards(likedGrid);
+          }
         }
-        
-        if (wishlistGrid) {
-          wishlistGrid.innerHTML = PRODUCTS.slice(4, 8).map(p => renderProductCard(p)).join('');
-          if (typeof initProductCards === 'function') initProductCards(wishlistGrid);
-        }
-        
-        if (likedGrid) {
-          likedGrid.innerHTML = PRODUCTS.slice(8, 12).map(p => renderProductCard(p)).join('');
-          if (typeof initProductCards === 'function') initProductCards(likedGrid);
-        }
-      }
+      }, 50);
     });
   </script>
 </body>
