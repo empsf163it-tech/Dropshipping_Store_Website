@@ -22,9 +22,9 @@ const PRODUCTS = [
     reviewsCount: 142,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://images.unsplash.com/photo-1616628188540-924ad3f5f2b5?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1616628188540-924ad3f5f2b5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=800&q=80'
     ],
@@ -73,10 +73,10 @@ const PRODUCTS = [
     reviewsCount: 310,
     category: 'lighting',
     collection: 'minimalist-living',
-    mainImage: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Space Gray', hex: '#4A4A4A' }
@@ -97,9 +97,9 @@ const PRODUCTS = [
     reviewsCount: 56,
     category: 'desk-accessories',
     collection: 'executive-suite',
-    mainImage: 'https://images.unsplash.com/photo-1586953208270-767889fa9b00?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b5?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1586953208270-767889fa9b00?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1625772299848-391b6a87d7b5?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Graphite', hex: '#333333' }
@@ -150,9 +150,9 @@ const PRODUCTS = [
     reviewsCount: 890,
     category: 'audio',
     collection: 'travel-tech',
-    mainImage: 'https://images.unsplash.com/photo-1590658268037-6bf12f032f55?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1590658268037-6bf12f032f55?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
@@ -175,9 +175,9 @@ const PRODUCTS = [
     reviewsCount: 65,
     category: 'lighting',
     collection: 'minimalist-living',
-    mainImage: 'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80',
+    mainImage: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?auto=format&fit=crop&w=800&q=80'
+      'https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80'
     ],
     colors: [
       { name: 'Brushed Steel', hex: '#7A7A7A' }
